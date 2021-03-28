@@ -1,0 +1,70 @@
+body{
+  padding-top:20px;
+  word-wrap:break-word;
+  background-image: url(img/rainbow.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img{
+  height: 100px;
+}
+
+.picMessage {
+  height: 100px;
+  width: 30%;
+}
+
+.box {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.chooseFile {
+  margin: 0px auto;
+}
+
+.page-header {
+  border-bottom: none;
+}
+
+
+.container {
+  border-radius: 20%;
+  border: 3px solid rgb(253,116,122);
+  width: 50%;
+  background-color: rgb(255,255,255, .5);
+}
+
+.containerTwo {
+  margin-top: 0px;
+  border: 2px solid black;
+  width: 50%;
+  /* margin: 0px auto; */
+  border-radius: 50%;
+}
+
+.jumbotron {
+  width: 42%;
+  background-color: rgb(254,240,96, .6);
+}
+
+.profileTitle {
+  font-family: 'Train One', cursive;
+}
+
+li {
+  font-size: 2rem;
+  margin: 0px auto;
+  list-style: none;
+    /* width: 50%; */
+}
+
+ul {
+  text-align: center;
+
+}
+
+h1 {
+  font-family: 'Train One', cursive;
+}

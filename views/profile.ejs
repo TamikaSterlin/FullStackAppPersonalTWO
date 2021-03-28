@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>21 Savage Fan Site</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="containerTwo">
+
+    <div class="page-header text-center">
+      <h1 class="profileTitle">Your Scrapbook</h1>
+      <h2 class="profileTitle">Upload an image with a message to create a memory!</h2>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- LOCAL INFORMATION -->
+    <div class="col-sm-6">
+      <!-- <div class="well">
+          <h3><span class="fa fa-user"></span> Local</h3>
+
+          <% if (user.local.email) { %>
+          <p>
+            <strong>id</strong>: <%= user._id %><br>
+            <strong>email</strong>: <%= user.local.email %><br>
+            <strong>password</strong>: <%= user.local.password %>
+          </p>
+
+          <a href="/unlink/local" class="btn btn-default">Unlink</a>
+          <% } else { %>
+          <a href="/connect/local" class="btn btn-default">Connect Local</a>
+          <% } %>
+
+        </div> -->
+    </div>
+    <div class="box">
+      <ul class="messages">
+        <% for(var i=0; i<messages.length; i++) {%>
+        <li class="message">
+          <img src="<%= messages[i].img %>" alt="pic">
+          <span><%= messages[i].msg %></span>
+          <span><%= messages[i].thumbUp %></span>
+          <!-- <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+            <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span> -->
+          <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </li>
+        <% } %>
+      </ul>
+
+
+      <% if (user.local.email) { %>
+      <form class="formTwo" action="/messages" method="POST" enctype="multipart/form-data">
+        <p> <input class="chooseFile" type="file" name="file"></p>
+        <input class="picMessage" type="text" placeholder="Picture Description" name="msg">
+        <p> <input type="submit" name="submit" value="upload"></p>
+      </form>
+    </div>
+    <% } %>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

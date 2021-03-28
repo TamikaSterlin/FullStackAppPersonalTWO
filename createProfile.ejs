@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Travel Buddy</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="createProfileStyle.css">
+</head>
+
+<body>
+  <div class="parent">
+    <label for="exampleFormControlInput1" class="form-label">Create Profile</label>
+    <form action="/createProfile" method="post">
+      <div class="row g-3">
+        <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="First name" aria-label="Last name">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Current Employed</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Boston Medical">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label" >City</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Boston">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">State</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Massachusettes">
+        </div>
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>
